@@ -31,6 +31,15 @@
   color: var(--link-color); 
 }
 
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+a {
+  color: var(--link-color);
+}
+
 .page {
   background-color: var(--bg-page);
   display: flex;
