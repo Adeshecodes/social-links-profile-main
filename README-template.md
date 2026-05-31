@@ -12,12 +12,10 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Debugging](#debugging)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -26,96 +24,98 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
+- View a responsive layout on mobile and desktop
+- Experience a clean, centered profile interface with social links
 
 ### Screenshot
 
-![](./screenshot.jpg)
+#### Mobile View(active state)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+<img width="752" height="1800" alt="Screen Shot 2026-05-31 at 02 25 58" src="https://github.com/user-attachments/assets/41d01a18-0681-4336-adc5-678b708188ec" />
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+#### Desktop View(active state)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+<img width="1920" height="837" alt="Screenshot 2026-05-31 at 02-44-17 Frontend Mentor Social links profile" src="https://github.com/user-attachments/assets/3ad2033f-b643-41bf-a0cf-99ef5e94e83f" />
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Adeshecodes/social-links-profile-main)
+- Live Site URL: (https://papaya-lamington-06e327.netlify.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
+- Local fonts using "@font-face"
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Responsive design with media queries
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project helped me strengthen my understanding of:
+- Centering content using Flexbox
+- Loading and using local fonts with @font-face
+- Matching spacing, sizing, and typography to a design
+- Structuring clean, semantic HTML
+- Creating responsive layouts using media queries
 
-To see how you can add code snippets, see below:
+Example of my @font-face setup:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Example of my reponsive media query:
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+@media (min-width: 768px) {
+  .content {
+    max-width: 400px;
+    padding: 48px;
+  }
+}
+```
+
+### Debugging
+
+During this project, I debugged several issues including:
+- Fixing incorrect vertical centering using Flexbox
+- Correcting local font loading errors with @font-face
+- Adjusting layout spacing to match the design more accurately
+- Removing duplicated CSS blocks that increased file size
+- Resolving Git warnings (CRLF vs LF) and configuring a remote repository
+- Improving responsive behavior on larger screens
+- Fixing button sizing, padding, and hover states to match the design
+
+These debugging steps helped me refine the UI and ensure the project behaves correctly across different devices.
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+This project showed me areas I want to grow in, especially:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- Getting better at matching the design exactly
+- Making layouts that adapt smoothly to different screens
+- Writing CSS that’s easier to maintain
+- Challenging myself with more advanced Frontend Mentor tasks
 
 ### AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
-
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+I used Microsoft Copilot mainly as a learning assistant. It helped me figure out things like local fonts, spacing, and responsiveness. It guided me through debugging and gave me clearer explanations when I got stuck. It was a helpful tool, but the actual building and decisions were mine.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [S.A.ADEYEMI](https://github.com/Adeshecodes)
+- Frontend Mentor - [@Adeshecodes](https://www.frontendmentor.io/profile/Adeshecodes)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks to Frontend Mentor for providing this challenge and helping developers grow through real‑world projects.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+A special thank you to <b>Akanimo Udoh</b>, who gave me helpful feedback on my previous Blog Card project. His advice about properly importing fonts and improving mobile spacing has been really useful, and I applied those lessons here. He also encouraged me to explore tools like clamp() for future projects, which I plan to look into.
