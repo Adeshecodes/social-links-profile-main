@@ -71,7 +71,7 @@ li:focus-within a {
 .content {
   background-color: var(--bg-card);
   border-radius: 1.25rem;
-  padding: 2.5rem;
+  padding: calc(2rem + 1vh);
   text-align: center;
   width: 90%;
   max-width: 23.5rem;
@@ -79,8 +79,8 @@ li:focus-within a {
 
 .avatar {
   border-radius: 50%;
-  height: 5.5rem;
-  width: 5.5rem;
+  height: calc(5rem + 1vw);
+  width: calc(5rem + 1vw);
   margin-block-end: 1.25rem;
 }
 
@@ -114,12 +114,12 @@ li:focus-within a {
 @media (min-width: 48rem) {
   .content {
     max-width: 25rem;
-    padding: 3rem;
+    padding: calc(2.5rem + 1vh);
   }
 
   .avatar {
-    height: 6.25rem;
-    width: 6.25rem;
+    height: calc(5.5rem + 1vw);
+    width: calc(5.5rem + 1vw);
   }
 
   .name {
