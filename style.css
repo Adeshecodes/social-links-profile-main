@@ -17,22 +17,23 @@
 }
 
 :root {
-  --bg-dark: hsl(0, 0%, 8%);
+  --bg-page: hsl(0, 0%, 8%);
   --bg-card: hsl(0, 0%, 12%);
+  --bg-button: hsl(0, 0%, 20%);
   --text-white: hsl(0, 0%, 100%);
-  --text-grey: hsl(0, 0%, 70%);
+  --text-grey: hsl(0, 0%, 80%);
   --accent: hsl(75, 94%, 57%);
+  --text-black: hsl(0, 0%, 0%);
 }
 
-
 .page {
-    background-color: var(--bg-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-block: min(2.5rem, 8vh) 0;
-    min-height: 100vh;
-    font-family: 'Inter', sans-serif;
+  background-color: var(--bg-page);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2.5rem 4rem;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
 }
 
 ul {
@@ -42,64 +43,65 @@ ul {
 }
 
 li {
-    background-color: hsl(0, 0%, 20%);
-    border-radius: 10px;
-    margin-block-end: 0.75rem;
-    padding: 16px 0;
-    transition: background-color 0.2s ease;
+  background-color: var(--bg-button);
+  border-radius: 0.625rem;
+  margin-block-end: 0.75rem;
+  padding-block: 1rem;
+  transition: background-color 0.2s ease;
 }
 
 li a {
-    color: hsl(0, 0%, 100%);
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    display: block;
+  color: var(--text-white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
 }
 
-li:hover, li:focus-within {
-    background-color: hsl(75, 94%, 57%);
+li:hover,
+li:focus-within {
+  background-color: var(--accent);
 }
 
-li:hover a, li:focus-within a {
-    color: hsl(0, 0%, 0%);
+li:hover a,
+li:focus-within a {
+  color: var(--text-black);
 }
 
 .content {
-    background-color: hsl(0, 0%, 12%);
-    border-radius: 20px;
-    padding: 40px;
-    text-align: center;
-    width: 90%;
-    max-width: 375px;
+  background-color: var(--bg-card);
+  border-radius: 1.25rem;
+  padding: 2.5rem;
+  text-align: center;
+  width: 90%;
+  max-width: 23.5rem;
 }
 
 .avatar {
-    border-radius: 50%;
-    height: 88px;
-    margin-bottom: 20px;
-    width: 88px;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  margin-block-end: 1.25rem;
 }
 
 .name {
-    color: hsl(0, 0%, 100%);
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 8px;
+  color: var(--text-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-block-end: 0.5rem;
 }
 
 .location {
-    color: hsl(75, 94%, 57%);
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 24px;
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-block-end: 1.5rem;
 }
 
 .bio {
-    color: hsl(0, 0%, 80%);
-    font-size: 14px;
-    /* font-weight: 400; */
-    margin-bottom: 24px;
+  color: var(--text-grey);
+  font-size: 0.875rem;
+  margin-block-end: 1.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -111,20 +113,20 @@ li:hover a, li:focus-within a {
 
 @media (min-width: 768px) {
   .content {
-    max-width: 400px;
-    padding: 48px;
+    max-width: 25rem;
+    padding: 3rem;
   }
 
   .avatar {
-    height: 100px;
-    width: 100px;
+    height: 6.25rem;
+    width: 6.25rem;
   }
 
   .name {
-    font-size: 28px;
+    font-size: 1.75rem;
   }
 
   li {
-    padding: 18px 0;
+    padding-block: 1.125rem;
   }
 }
