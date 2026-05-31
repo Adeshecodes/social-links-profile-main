@@ -24,6 +24,11 @@
   --text-grey: hsl(0, 0%, 80%);
   --accent: hsl(75, 94%, 57%);
   --text-black: hsl(0, 0%, 0%);
+  --link-color: hsl(228, 45%, 44%);
+}
+
+.attribution a { 
+  color: var(--link-color); 
 }
 
 .page {
