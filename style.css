@@ -27,6 +27,10 @@
   --link-color: hsl(228, 45%, 44%);
 }
 
+a {
+  color: var(--link-color);
+}
+
 .attribution a { 
   color: var(--link-color); 
 }
@@ -36,9 +40,6 @@
   text-align: center;
 }
 
-a {
-  color: var(--link-color);
-}
 
 .page {
   background-color: var(--bg-page);
